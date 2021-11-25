@@ -138,7 +138,7 @@ export const Banner10DataSource = {
         },
         content: {
           className: "banner1-content",
-          children: "一个由爱好者们搭建的我的世界公益服",
+          children: "猫咪即是正义！",
         },
         content_added: {
           className: "banner1-content_added",
@@ -158,7 +158,7 @@ export const Banner10DataSource = {
         },
         content: {
           className: "banner1-content",
-          children: "一个由爱好者们搭建的我的世界公益服",
+          children: "带上伙伴在猫服探索远航",
         },
         content_added: {
           className: "banner1-content_added",
@@ -191,14 +191,18 @@ export const Content00DataSource = {
             {
               name: "image",
               className: "content0-block-icon",
-              children: "../img/bg.jpg",
+              children: "https://s1.imagehub.cc/images/2021/11/24/kehuduan.png",
             },
             {
               name: "title",
               className: "content0-block-title",
               children: "独立客户端",
             },
-            { name: "content", children: "支付、结算、核算接入产品效率翻四倍" },
+            {
+              name: "content",
+              children:
+                "服务器专用开源独立客户端，别具一格的外观，自助更新游戏版本，极速登录快人一步",
+            },
           ],
         },
       },
@@ -214,16 +218,17 @@ export const Content00DataSource = {
               name: "image",
               className: "content0-block-icon",
               children:
-                "https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png",
+                "https://s1.imagehub.cc/images/2021/11/24/minecraft.png",
             },
             {
               name: "title",
               className: "content0-block-title",
-              children: "一站式事中风险监控",
+              children: "原版生存",
             },
             {
               name: "content",
-              children: "在所有需求配置环节事前风险控制和质量控制能力",
+              children:
+                "7*24专业生存服务器，随机传送，圈地建筑，多人协助生存，砍树挖矿辅助，原汁原味生存世界，多种特性加持不乏趣味",
             },
           ],
         },
@@ -240,16 +245,17 @@ export const Content00DataSource = {
               name: "image",
               className: "content0-block-icon",
               children:
-                "https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png",
+                "https://s1.imagehub.cc/images/2021/11/24/jingjijiangli.png",
             },
             {
               name: "title",
               className: "content0-block-title",
-              children: "一站式数据运营",
+              children: "多人竞技",
             },
             {
               name: "content",
-              children: "沉淀产品接入效率和运营小二工作效率数据",
+              children:
+                "未来将会加入，捉迷藏，起床战争，群雄争霸，饥饿游戏，绝境求生等等特色的小游戏正在制作当中。敬请期待！",
             },
           ],
         },
@@ -264,11 +270,11 @@ export const Content50DataSource = {
   titleWrapper: {
     className: "title-wrapper",
     children: [
-      { name: "title", children: "客户案例", className: "title-h1" },
+      { name: "title", children: "游戏实况", className: "title-h1" },
       {
         name: "content",
         className: "title-content",
-        children: "在这里用一段话介绍服务的案例情况",
+        children: "在猫服打造你独一无二的世界",
       },
     ],
   },
@@ -282,10 +288,12 @@ export const Content50DataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: "content5-block-content" },
+          wrapper: { className: "content5-block-content " },
           img: {
-            children:
-              "https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg",
+            // 加id来给snap加background img 通过css的形式加入，content5.less
+            id: "snap1",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Design" },
         },
@@ -298,8 +306,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg",
+            id: "snap2",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Motion" },
         },
@@ -312,8 +321,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg",
+            id: "snap3",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Design" },
         },
@@ -326,8 +336,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg",
+            id: "snap4",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Motion" },
         },
@@ -340,8 +351,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg",
+            id: "snap5",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Design" },
         },
@@ -354,8 +366,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg",
+            id: "snap6",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Motion" },
         },
@@ -368,8 +381,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg",
+            id: "snap7",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Design" },
         },
@@ -382,8 +396,9 @@ export const Content50DataSource = {
         children: {
           wrapper: { className: "content5-block-content" },
           img: {
-            children:
-              "https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg",
+            id: "snap8",
+            className: "mc-snap",
+            children: "",
           },
           content: { children: "Ant Motion" },
         },
@@ -534,6 +549,43 @@ export const Content30DataSource = {
         },
       },
     ],
+  },
+};
+export const Content110DataSource = {
+  OverPack: {
+    className: "home-page-wrapper content11-wrapper",
+    playScale: 0.3,
+  },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      {
+        name: "image",
+        children:
+          "https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg",
+        className: "title-image",
+      },
+      // title改用mytitle的原因：为了自定义样式，原name被强制高优先级绑定了黑色样式，我要改成白色
+      {
+        name: "myTitle",
+        children: "丰富的游戏特色等你体验",
+        className: " title-col title-size ",
+      },
+      {
+        name: "content",
+        children: "还在等什么，心动不如行动",
+        className: "title-content title-col",
+      },
+      {
+        name: "content2",
+        children: "",
+        className: "title-content",
+      },
+    ],
+  },
+  button: {
+    className: "",
+    children: { a: { className: "button", href: "#", children: "客户端下载" } },
   },
 };
 export const Footer10DataSource = {

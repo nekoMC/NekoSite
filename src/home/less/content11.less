@@ -1,0 +1,55 @@
+@content11: content11;
+.@{content11}-wrapper {
+  height: 480px;
+  background: url("https://s1.imagehub.cc/images/2021/11/25/wallhaven-3zqo53.png")
+    no-repeat bottom;
+  background-size: cover;
+  background-size: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 96px;
+  .button {
+    box-shadow: 0 8px 16px #0554b7;
+    background: linear-gradient(to right, #05cbff, #1e5aff) !important;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 21px;
+    color: #fff;
+    width: 128px;
+    padding: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px #0554b7;
+    }
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 8px #0554b7;
+    }
+  }
+  &.home-page-wrapper {
+    .title-wrapper {
+      margin-bottom: 32px;
+      color: rgba(255, 255, 255, 0.877);
+    }
+  }
+
+  .title-content {
+    line-height: 32px;
+  }
+}
+.title-size {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.title-col {
+  // color: rgba(255, 255, 255, 0.877);
+}
+@media screen and (max-width: 767px) {
+  .@{content11}-wrapper {
+    padding-bottom: 0;
+  }
+}

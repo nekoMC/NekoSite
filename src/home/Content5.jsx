@@ -1,8 +1,8 @@
-import React from 'react';
-import { Row, Col } from 'antd';
-import { TweenOneGroup } from 'rc-tween-one';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender } from './utils';
+import React from "react";
+import { Row, Col } from "antd";
+import { TweenOneGroup } from "rc-tween-one";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import { getChildrenToRender } from "./utils";
 
 class Content5 extends React.PureComponent {
   getChildrenToRender = (data) =>
@@ -11,9 +11,9 @@ class Content5 extends React.PureComponent {
         <Col key={item.name} {...item}>
           <a {...item.children.wrapper}>
             <span {...item.children.img}>
-              <img src={item.children.img.children} height="100%" alt="img" />
+              {/* <img src={item.children.img.children} height="100%" alt="img" /> */}
             </span>
-            <p {...item.children.content}>{item.children.content.children}</p>
+            {/* <p {...item.children.content}>{item.children.content.children}</p> */}
           </a>
         </Col>
       );
@@ -41,12 +41,12 @@ class Content5 extends React.PureComponent {
               component={Row}
               key="ul"
               enter={{
-                y: '+=30',
+                y: "+=30",
                 opacity: 0,
-                type: 'from',
-                ease: 'easeInOutQuad',
+                type: "from",
+                ease: "easeInOutQuad",
               }}
-              leave={{ y: '+=30', opacity: 0, ease: 'easeInOutQuad' }}
+              leave={{ y: "+=30", opacity: 0, ease: "easeInOutQuad" }}
               {...dataSource.block}
             >
               {childrenToRender}
