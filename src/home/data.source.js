@@ -274,7 +274,7 @@ export const Content50DataSource = {
       {
         name: "content",
         className: "title-content",
-        children: "在猫服打造你独一无二的世界",
+        children: "在猫服创造你独一无二的世界",
       },
     ],
   },
@@ -415,13 +415,13 @@ export const Content30DataSource = {
     children: [
       {
         name: "title",
-        children: "蚂蚁金融云提供专业的服务",
+        children: "技术支持与服务保障",
         className: "title-h1",
       },
       {
         name: "content",
         className: "title-content",
-        children: "基于阿里云强大的基础资源",
+        children: "却道，此心安处是吾乡。 ",
       },
     ],
   },
@@ -436,15 +436,13 @@ export const Content30DataSource = {
         children: {
           icon: {
             className: "content3-icon",
-            children:
-              "https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png",
+            children: "https://s1.imagehub.cc/images/2021/11/25/5_10.png",
           },
           textWrapper: { className: "content3-text" },
-          title: { className: "content3-title", children: "企业资源管理" },
+          title: { className: "content3-title", children: "非盈利公益服" },
           content: {
             className: "content3-content",
-            children:
-              "云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。",
+            children: "做非盈利模式的公益服，坚持用爱发电！",
           },
         },
       },
@@ -457,14 +455,13 @@ export const Content30DataSource = {
           icon: {
             className: "content3-icon",
             children:
-              "https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png",
+              "https://s1.imagehub.cc/images/2021/11/25/67b385b5e983a08bc593aa72163f280f.png",
           },
           textWrapper: { className: "content3-text" },
-          title: { className: "content3-title", children: "云安全" },
+          title: { className: "content3-title", children: "良好游戏环境" },
           content: {
             className: "content3-content",
-            children:
-              "按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。",
+            children: "全方位维护游戏环境，营造良好的游戏氛围，杜绝不良行为。",
           },
         },
       },
@@ -477,14 +474,13 @@ export const Content30DataSource = {
           icon: {
             className: "content3-icon",
             children:
-              "https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png",
+              "https://s1.imagehub.cc/images/2021/11/25/dfb478b74c3f55c76cfba0abe4132296.png",
           },
           textWrapper: { className: "content3-text" },
-          title: { className: "content3-title", children: "云监控" },
+          title: { className: "content3-title", children: "优质服务器" },
           content: {
             className: "content3-content",
-            children:
-              "分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。",
+            children: "高性能服务器7*24不间断运行，实时监控实例状态。",
           },
         },
       },
@@ -497,14 +493,14 @@ export const Content30DataSource = {
           icon: {
             className: "content3-icon",
             children:
-              "https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png",
+              "https://s1.imagehub.cc/images/2021/11/25/ce967c8ff7456a896eacb1b287a2fd9e.png",
           },
           textWrapper: { className: "content3-text" },
-          title: { className: "content3-title", children: "移动" },
+          title: { className: "content3-title", children: "反外挂" },
           content: {
             className: "content3-content",
             children:
-              "一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。",
+              "搭载AntiCheat反外挂系统，对开挂用户永久封禁，让挂佬无处遁形。",
           },
         },
       },
@@ -517,14 +513,13 @@ export const Content30DataSource = {
           icon: {
             className: "content3-icon",
             children:
-              "https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png",
+              "https://s1.imagehub.cc/images/2021/11/25/1b4b51c3975724ab94acbc877d14ce15.png",
           },
           textWrapper: { className: "content3-text" },
-          title: { className: "content3-title", children: "分布式中间件" },
+          title: { className: "content3-title", children: "反馈支持" },
           content: {
             className: "content3-content",
-            children:
-              "金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。",
+            children: "多条反馈通道畅通，欢迎每一位玩家提出的宝贵意见。",
           },
         },
       },
@@ -537,14 +532,14 @@ export const Content30DataSource = {
           icon: {
             className: "content3-icon",
             children:
-              "https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png",
+              "https://s1.imagehub.cc/images/2021/11/25/d9bf00266f272e56ff65ae9034393601.png",
           },
           textWrapper: { className: "content3-text" },
-          title: { className: "content3-title", children: "大数据" },
+          title: { className: "content3-title", children: "更新保障" },
           content: {
             className: "content3-content",
             children:
-              "一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。",
+              "我们的服务器还在雏形阶段，无论是官方的版本更新还是更多游戏玩法的更新，我们都将持续跟进更新..",
           },
         },
       },
@@ -598,7 +593,7 @@ export const Footer10DataSource = {
       {
         name: "block0",
         xs: 24,
-        md: 6,
+        md: 9,
         className: "block",
         title: {
           className: "logo",
@@ -618,22 +613,21 @@ export const Footer10DataSource = {
       {
         name: "block1",
         xs: 24,
-        md: 6,
+        md: 5,
         className: "block",
-        title: { children: "产品" },
+        title: { children: "指北" },
         childWrapper: {
           children: [
-            { name: "link0", href: "#", children: "产品更新记录" },
-            { name: "link1", href: "#", children: "API文档" },
+            { name: "link0", href: "#", children: "更新记录" },
+            { name: "link1", href: "#", children: "游戏文档" },
             { name: "link2", href: "#", children: "快速入门" },
-            { name: "link3", href: "#", children: "参考指南" },
           ],
         },
       },
       {
         name: "block2",
         xs: 24,
-        md: 6,
+        md: 5,
         className: "block",
         title: { children: "关于" },
         childWrapper: {
@@ -646,13 +640,13 @@ export const Footer10DataSource = {
       {
         name: "block3",
         xs: 24,
-        md: 6,
+        md: 5,
         className: "block",
-        title: { children: "资源" },
+        title: { children: "更多" },
         childWrapper: {
           children: [
-            { href: "#", name: "link0", children: "Ant Design" },
-            { href: "#", name: "link1", children: "Ant Motion" },
+            { href: "#", name: "link0", children: "制作团队" },
+            { href: "#", name: "link1", children: "捐赠" },
           ],
         },
       },
@@ -663,10 +657,12 @@ export const Footer10DataSource = {
   copyright: {
     className: "copyright",
     children: (
-      <span>
-        ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights
-        Reserved
-      </span>
+      <div>
+        <span>
+          ©2021 by <a href="#">Neko MC</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          辽ICP备19006288号-2
+        </span>
+      </div>
     ),
   },
 };
