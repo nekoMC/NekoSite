@@ -18,68 +18,16 @@ export const Nav30DataSource = {
         name: "item0",
         className: "header3-item",
         children: {
-          href: "#",
+          href: "/home",
           children: [{ children: "主页", name: "text" }],
         },
-        // subItem: [
-        //   {
-        //     name: 'sub0',
-        //     className: 'item-sub',
-        //     children: {
-        //       className: 'item-sub-item',
-        //       children: [
-        //         {
-        //           name: 'image0',
-        //           className: 'item-image',
-        //           children:
-        //             'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-        //         },
-        //         {
-        //           name: 'title',
-        //           className: 'item-title',
-        //           children: 'Ant Design',
-        //         },
-        //         {
-        //           name: 'content',
-        //           className: 'item-content',
-        //           children: '企业级 UI 设计体系',
-        //         },
-        //       ],
-        //     },
-        //   },
-        //   {
-        //     name: 'sub1',
-        //     className: 'item-sub',
-        //     children: {
-        //       className: 'item-sub-item',
-        //       children: [
-        //         {
-        //           name: 'image0',
-        //           className: 'item-image',
-        //           children:
-        //             'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-        //         },
-        //         {
-        //           name: 'title',
-        //           className: 'item-title',
-        //           children: 'Ant Design',
-        //         },
-        //         {
-        //           name: 'content',
-        //           className: 'item-content',
-        //           children: '企业级 UI 设计体系',
-        //         },
-        //       ],
-        //     },
-        //   },
-        // ],
       },
       {
         name: "item1",
         className: "header3-item",
         children: {
           href: "#",
-          children: [{ children: "游戏资讯", name: "text" }],
+          children: [{ children: "皮肤站", name: "text" }],
         },
       },
       {
@@ -97,6 +45,57 @@ export const Nav30DataSource = {
           href: "#",
           children: [{ children: "联系我们", name: "text" }],
         },
+        subItem: [
+          {
+            name: "sub0",
+            className: "item-sub",
+            children: {
+              className: "item-sub-item",
+              children: [
+                {
+                  name: "image0",
+                  className: "item-image",
+                  children: "https://s1.imagehub.cc/images/2021/11/26/tx.png",
+                },
+                {
+                  name: "title",
+                  className: "item-title",
+                  children: "猫服QQ群",
+                },
+                {
+                  name: "content",
+                  className: "item-content",
+                  children: "643531871",
+                },
+              ],
+            },
+          },
+          {
+            name: "sub1",
+            className: "item-sub",
+            children: {
+              className: "item-sub-item",
+              children: [
+                {
+                  name: "image0",
+                  className: "item-image",
+                  children:
+                    "https://s1.imagehub.cc/images/2021/11/26/minecraft.png",
+                },
+                {
+                  name: "title",
+                  className: "item-title",
+                  children: "官方宣传帖",
+                },
+                {
+                  name: "content",
+                  className: "item-content",
+                  children: "MCBBS指路=>",
+                },
+              ],
+            },
+          },
+        ],
       },
     ],
   },
@@ -605,7 +604,7 @@ export const Footer10DataSource = {
           children: [
             {
               name: "content0",
-              children: "Animation specification and components of Ant Design.",
+              children: "welcome to nekomc,have a good time！",
             },
           ],
         },
@@ -618,9 +617,9 @@ export const Footer10DataSource = {
         title: { children: "指北" },
         childWrapper: {
           children: [
-            { name: "link0", href: "#", children: "更新记录" },
-            { name: "link1", href: "#", children: "游戏文档" },
-            { name: "link2", href: "#", children: "快速入门" },
+            { name: "link0", href: "/update", children: "更新记录" },
+            { name: "link1", href: "/wiki", children: "游戏文档" },
+            { name: "link2", href: "/start", children: "快速入门" },
           ],
         },
       },
@@ -632,8 +631,8 @@ export const Footer10DataSource = {
         title: { children: "关于" },
         childWrapper: {
           children: [
-            { href: "#", name: "link0", children: "FAQ" },
-            { href: "#", name: "link1", children: "联系我们" },
+            { href: "/question", name: "link0", children: "FAQ" },
+            { href: "/team", name: "link0", children: "制作团队" },
           ],
         },
       },
@@ -644,10 +643,7 @@ export const Footer10DataSource = {
         className: "block",
         title: { children: "更多" },
         childWrapper: {
-          children: [
-            { href: "#", name: "link0", children: "制作团队" },
-            { href: "#", name: "link1", children: "捐赠" },
-          ],
+          children: [{ href: "/donate", name: "link1", children: "捐赠" }],
         },
       },
     ],
