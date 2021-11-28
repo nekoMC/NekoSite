@@ -3,13 +3,19 @@ import TweenOne from "rc-tween-one";
 import { Menu } from "antd";
 import { getChildrenToRender } from "./utils";
 import { Link, Router } from "react-router-dom";
+import { enquireScreen } from "enquire-js";
 
 const { Item, SubMenu } = Menu;
 
+let isMobile;
+enquireScreen((b) => {
+  isMobile = b;
+});
 class Header3 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      isMobile,
       phoneOpen: undefined,
     };
   }
@@ -22,8 +28,8 @@ class Header3 extends React.Component {
   };
 
   render() {
-    const { dataSource, isMobile, ...props } = this.props;
-    const { phoneOpen } = this.state;
+    const { dataSource, ...props } = this.props;
+    const { phoneOpen, isMobile } = this.state;
     const navData = dataSource.Menu.children;
     const navChildren = navData.map((item) => {
       const { children: a, subItem, ...itemProps } = item;

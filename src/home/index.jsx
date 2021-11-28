@@ -1,7 +1,7 @@
 import React from "react";
 import { enquireScreen } from "enquire-js";
 
-// import Nav3 from "./Nav3";
+import Nav3 from "./Nav3";
 import Banner1 from "./Banner1";
 import Content0 from "./Content0";
 import Content5 from "./Content5";
@@ -32,7 +32,6 @@ class Home extends React.Component {
     super(props);
     this.state = {
       isMobile,
-      show: !location.port, // 如果不是 dva 2.0 请删除
     };
   }
 
@@ -106,9 +105,10 @@ class Home extends React.Component {
           this.dom = d;
         }}
       >
-        {/* 如果不是 dva 2.0 替换成 {children} start */}
+        {/* 如果不是 dva 2.0 替换成{children} start  */}
         {/* {this.state.show && children}   直接渲染children 不要再判断show了*/}
         {children}
+
         {/* 如果不是 dva 2.0 替换成 {children} end */}
       </div>
     );
