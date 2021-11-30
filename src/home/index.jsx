@@ -108,7 +108,6 @@ class Home extends React.Component {
         {/* 如果不是 dva 2.0 替换成{children} start  */}
         {/* {this.state.show && children}   直接渲染children 不要再判断show了*/}
         {children}
-
         {/* 如果不是 dva 2.0 替换成 {children} end */}
       </div>
     );

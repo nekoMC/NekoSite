@@ -8,8 +8,7 @@ export const Nav30DataSource = {
   page: { className: "home-page" },
   logo: {
     className: "header3-logo",
-    children:
-      "https://gw.alipayobjects.com/zos/basement_prod/b30cdc2a-d91c-4c78-be9c-7c63b308d4b3.svg",
+    children: "https://s1.imagehub.cc/images/2021/11/30/logo.png",
   },
   Menu: {
     className: "header3-menu",
@@ -112,8 +111,7 @@ export const Banner10DataSource = {
         bg: { className: "bg bg0 kwbg8e31xdq-editor_css" },
         title: {
           className: "banner1-title",
-          children:
-            "https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png",
+          children: "https://s1.imagehub.cc/images/2021/11/30/NEKOMC5.png",
         },
         content: {
           className: "banner1-content",
@@ -132,8 +130,7 @@ export const Banner10DataSource = {
         bg: { className: "bg bg1" },
         title: {
           className: "banner1-title",
-          children:
-            "https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png",
+          children: "https://s1.imagehub.cc/images/2021/11/30/NEKOMC5.png",
         },
         content: {
           className: "banner1-content",
@@ -152,8 +149,7 @@ export const Banner10DataSource = {
         bg: { className: "bg bg2" },
         title: {
           className: "banner1-title",
-          children:
-            "https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png",
+          children: "https://s1.imagehub.cc/images/2021/11/30/NEKOMC5.png",
         },
         content: {
           className: "banner1-content",
@@ -596,8 +592,7 @@ export const Footer10DataSource = {
         className: "block",
         title: {
           className: "logo",
-          children:
-            "https://zos.alipayobjects.com/rmsportal/qqaimmXZVSwAhpL.svg",
+          children: "https://s1.imagehub.cc/images/2021/11/30/NEKOMC.png",
         },
         childWrapper: {
           className: "slogan",
