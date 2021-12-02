@@ -1,0 +1,59 @@
+.content {
+  margin: auto;
+  height: 500px;
+  width: 70%;
+  background-color: black;
+  //参考minecraft官方wiki的雪碧图
+  &-apple {
+    background-image: url(https://s1.imagehub.cc/images/2021/12/02/InvSprite.png);
+    background-position: -768px -3168px;
+  }
+  &-diamond {
+    background-image: url(https://s1.imagehub.cc/images/2021/12/02/InvSprite.png);
+    background-position: -608px -3488px;
+  }
+  &-cake {
+    background-image: url(https://s1.imagehub.cc/images/2021/12/02/InvSprite.png);
+    background-position: -416px -3584px;
+  }
+  &-color {
+    background-color: rgb(241, 241, 241);
+  }
+}
+.inv-sprite {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+.sprite {
+  display: inline-block;
+  vertical-align: text-top;
+  //   height: 16px;
+  //   width: 16px;
+  background-repeat: no-repeat;
+}
+.cards {
+  padding-top: 100px;
+  word-wrap: break-word;
+  //   参考mc wiki官方的字体
+  &-font {
+    font-family: rubik, helvetica, arial, sans-serif;
+  }
+  &-test {
+    cursor: pointer;
+    transition: box-shadow 0.3s, border-color 0.3s;
+
+    &-active {
+      border-color: transparent;
+      box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+        0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    }
+  }
+}
+.content-color {
+  background-color: rgb(241, 241, 241);
+}
+.donateQR {
+  width: 350px;
+  height: 350px;
+}
