@@ -121,7 +121,11 @@ export const Banner10DataSource = {
           className: "banner1-content_added",
           children: tip_words,
         },
-        button: { className: "banner1-button", children: btn_ },
+        button: {
+          className: "banner1-button",
+          children: btn_,
+          href: "#download",
+        },
       },
       {
         name: "elem1",
@@ -141,6 +145,7 @@ export const Banner10DataSource = {
           children: tip_words,
         },
         button: { className: "banner1-button", children: btn_ },
+        href: "#download",
       },
       {
         name: "elem2",
@@ -159,7 +164,12 @@ export const Banner10DataSource = {
           className: "banner1-content_added",
           children: tip_words,
         },
-        button: { className: "banner1-button", children: btn_ },
+        button: {
+          className: "banner1-button",
+          children: btn_,
+
+          href: "#download",
+        },
       },
     ],
   },
@@ -638,7 +648,10 @@ export const Footer10DataSource = {
         className: "block",
         title: { children: "更多" },
         childWrapper: {
-          children: [{ href: "/donate", name: "link1", children: "捐赠" }],
+          children: [
+            { href: "/donate", name: "link1", children: "捐赠" },
+            { href: "/", name: "link1", children: "免责声明" },
+          ],
         },
       },
     ],

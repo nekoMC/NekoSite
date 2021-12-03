@@ -86,8 +86,8 @@ class Home extends React.Component {
         isMobile={this.state.isMobile}
       />,
       <Content11
-        id="Content11_0"
-        key="Content11_0"
+        id="download"
+        key="download"
         dataSource={Content110DataSource}
         isMobile={this.state.isMobile}
       />,
