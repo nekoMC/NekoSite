@@ -4,8 +4,8 @@ import { enquireScreen } from "enquire-js";
 import Header from "./home/Nav3";
 import Footer from "./home/Footer1";
 import Home from "./home";
-import Donate from "./home/Donate";
-
+import Donate from "./donate/Donate";
+import Team from "./team/Team";
 import { Nav30DataSource, Footer10DataSource } from "./home/data.source.js";
 let isMobile;
 enquireScreen((b) => {
@@ -33,7 +33,7 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/team" element={<h1> 团队正在开发中...</h1>} />
+            <Route path="/team" element={<Team />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/question" element={<h1> F&Q正在开发中...</h1>} />
           </Routes>

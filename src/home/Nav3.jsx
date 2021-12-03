@@ -1,7 +1,7 @@
 import React from "react";
 import TweenOne from "rc-tween-one";
 import { Menu } from "antd";
-import { getChildrenToRender } from "./utils";
+import { getChildrenToRender } from "../utils";
 import { Link, Router } from "react-router-dom";
 import { enquireScreen } from "enquire-js";
 

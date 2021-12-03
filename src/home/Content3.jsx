@@ -1,9 +1,9 @@
-import React from 'react';
-import QueueAnim from 'rc-queue-anim';
-import TweenOne from 'rc-tween-one';
-import { Row, Col } from 'antd';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender } from './utils';
+import React from "react";
+import QueueAnim from "rc-queue-anim";
+import TweenOne from "rc-tween-one";
+import { Row, Col } from "antd";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import { getChildrenToRender } from "../utils";
 
 class Content3 extends React.PureComponent {
   getDelay = (e, b) => (e % b) * 100 + Math.floor(e / b) * 100 + b * 100;
@@ -19,11 +19,11 @@ class Content3 extends React.PureComponent {
       const delay = isMobile ? i * 50 : this.getDelay(i, 24 / item.md);
       const liAnim = {
         opacity: 0,
-        type: 'from',
-        ease: 'easeOutQuad',
+        type: "from",
+        ease: "easeOutQuad",
         delay,
       };
-      const childrenAnim = { ...liAnim, x: '+=10', delay: delay + 100 };
+      const childrenAnim = { ...liAnim, x: "+=10", delay: delay + 100 };
       clearFloatNum += item.md;
       clearFloatNum = clearFloatNum > 24 ? 0 : clearFloatNum;
       return (
@@ -35,16 +35,16 @@ class Content3 extends React.PureComponent {
           componentProps={{ md: item.md, xs: item.xs }}
           className={
             !clearFloatNum
-              ? `${item.className || ''} clear-both`.trim()
+              ? `${item.className || ""} clear-both`.trim()
               : item.className
           }
         >
           <TweenOne
             animation={{
-              x: '-=10',
+              x: "-=10",
               opacity: 0,
-              type: 'from',
-              ease: 'easeOutQuad',
+              type: "from",
+              ease: "easeOutQuad",
             }}
             key="img"
             {...childObj.icon}
