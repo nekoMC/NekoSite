@@ -2,7 +2,7 @@ import React from "react";
 import QueueAnim from "rc-queue-anim";
 import { Row, Col } from "antd";
 import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
-import { getChildrenToRender, isImg } from "../utils";
+import { getChildrenToRender } from "../utils";
 import "./less/team.less";
 import { Teams10DataSource } from "./data.source";
 export default class Team extends React.PureComponent {

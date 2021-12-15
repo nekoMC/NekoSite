@@ -6,6 +6,7 @@ import Footer from "./home/Footer1";
 import Home from "./home";
 import Donate from "./donate/Donate";
 import Team from "./team/Team";
+import Register from "./register/Register";
 import { Nav30DataSource, Footer10DataSource } from "./home/data.source.js";
 let isMobile;
 enquireScreen((b) => {
@@ -35,7 +36,8 @@ class App extends Component {
             <Route path="/home" element={<Home />} />
             <Route path="/team" element={<Team />} />
             <Route path="/donate" element={<Donate />} />
-            <Route path="/question" element={<h1> F&Q正在开发中...</h1>} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/question" element={<h1> FAQ正在开发中...</h1>} />
           </Routes>
           <Footer dataSource={Footer10DataSource} isMobile={this.isMobile} />
         </Router>

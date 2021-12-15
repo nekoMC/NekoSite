@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { Popover, Button, Card, Col, Row } from "antd";
+import { Popover, Card, Col, Row } from "antd";
 import "./less/donate.less";
 
 const donate_one = (
@@ -36,7 +36,7 @@ const donate_three = (
     <img
       className="donateQR"
       src={require("../img/wechat3.jpg").default}
-      al3="wechat3"
+      alt="wechat3"
     />
     <img
       className="donateQR"
@@ -50,7 +50,7 @@ const donate_four = (
     <img
       className="donateQR"
       src={require("../img/wechat4.jpg").default}
-      al3="wechat4"
+      alt="wechat4"
     />
     <img
       className="donateQR"
@@ -79,7 +79,7 @@ export default function Donate() {
         setIsChecked([false, false, false, true]);
         e.stopPropagation();
         break;
-      case 4:
+      default:
         setIsChecked([false, false, false, false]);
         e.stopPropagation();
         break;
@@ -103,7 +103,7 @@ export default function Donate() {
                 className={isChecked[0] ? "cards-test-active cards-font" : ""}
                 title="点击捐赠一个苹果 "
                 extra={
-                  <a href="#">
+                  <a>
                     <b>￥2</b>
                   </a>
                 }
@@ -122,7 +122,7 @@ export default function Donate() {
                 className={isChecked[1] ? "cards-test-active cards-font" : ""}
                 title="点击捐赠一块铁锭 "
                 extra={
-                  <a href="#">
+                  <a>
                     <b>￥8</b>
                   </a>
                 }
@@ -141,7 +141,7 @@ export default function Donate() {
                 className={isChecked[2] ? "cards-test-active cards-font" : ""}
                 title="点击捐赠一块金锭！ "
                 extra={
-                  <a href="#">
+                  <a>
                     <b>￥20</b>
                   </a>
                 }
@@ -160,7 +160,7 @@ export default function Donate() {
                 className={isChecked[3] ? "cards-test-active cards-font" : ""}
                 title="这是?钻石!  "
                 extra={
-                  <a href="#">
+                  <a>
                     <b>￥???</b>
                   </a>
                 }

@@ -1,7 +1,5 @@
 import React from "react";
 import { enquireScreen } from "enquire-js";
-
-import Nav3 from "./Nav3";
 import Banner1 from "./Banner1";
 import Content0 from "./Content0";
 import Content5 from "./Content5";
@@ -10,13 +8,11 @@ import Content11 from "./Content11";
 // import Footer1 from "./Footer1";
 
 import {
-  Nav30DataSource,
   Banner10DataSource,
   Content00DataSource,
   Content50DataSource,
   Content30DataSource,
   Content110DataSource,
-  Footer10DataSource,
 } from "./data.source";
 import "./less/antMotionStyle.less";
 import "./less/radius.less";
@@ -24,8 +20,6 @@ let isMobile;
 enquireScreen((b) => {
   isMobile = b;
 });
-
-const { location = {} } = typeof window !== "undefined" ? window : {};
 
 class Home extends React.Component {
   constructor(props) {

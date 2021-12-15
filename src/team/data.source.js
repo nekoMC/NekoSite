@@ -12,15 +12,14 @@ export const Teams10DataSource = {
       {
         name: "block0",
         className: "block",
-        md: 8,
+        md: 12,
         xs: 24,
         titleWrapper: {
           children: [
             {
               name: "image",
               className: "teams1-image",
-              children:
-                "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
+              children: "https://s1.imagehub.cc/images/2021/12/04/58101940.jpg",
             },
             { name: "title", className: "teams1-title", children: "C1oud" },
             {
@@ -39,15 +38,14 @@ export const Teams10DataSource = {
       {
         name: "block1",
         className: "block",
-        md: 8,
+        md: 12,
         xs: 24,
         titleWrapper: {
           children: [
             {
               name: "image",
               className: "teams1-image",
-              children:
-                "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
+              children: "https://s1.imagehub.cc/images/2021/12/04/34133704.jpg",
             },
             {
               name: "title",
