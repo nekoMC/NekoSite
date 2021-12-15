@@ -1,13 +1,23 @@
-import { React,useState} from "react";
+import { React, useState } from "react";
 import { Form, Input, Button, Card } from "antd";
 import "./less/register.less";
-import axios from "axios";  
+import axios from "axios";
 export default function Register() {
-  const 
   const onFinish = (values) => {
     console.log("Success:", values);
+    console.log(typeof values);
+    myrequest("/neko/openapi/ssoLogin", values);
   };
-
+  const myrequest = (url, data) => {
+    axios
+      .post(url, data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
