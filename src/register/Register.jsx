@@ -1,21 +1,32 @@
 import { React, useState } from "react";
-import { Form, Input, Button, Card } from "antd";
+import { Form, Input, Button, Card, message } from "antd";
 import "./less/register.less";
 import axios from "axios";
 export default function Register() {
   const onFinish = (values) => {
     console.log("Success:", values);
     console.log(typeof values);
-    myrequest("/neko/openapi/ssoLogin", values);
+    myrequest("https://api.nekomc.fun/neko/users/register", values);
   };
   const myrequest = (url, data) => {
     axios
       .post(url, data)
       .then((res) => {
-        console.log(res);
+        message.success(res, 2);
       })
-      .catch((error) => {
-        console.log(error);
+      .catch(function (error) {
+        if (error.response) {
+          // 请求已发出，但服务器响应的状态码不在 2xx 范围内
+          message.error("Error: " + error.response.msg, 2);
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          message.error("Error: " + error.message, 2);
+          console.log("Error" + error.message, 2);
+        }
+        console.log(error.config);
       });
   };
   const onFinishFailed = (errorInfo) => {
@@ -42,12 +53,12 @@ export default function Register() {
           autoComplete="off"
         >
           <Form.Item
-            label="用户名（邮箱）"
+            label="用户名"
             name="username"
             rules={[
               {
                 required: true,
-                message: "Please input your username!",
+                message: "还没输入用户名喵~",
               },
             ]}
           >
@@ -60,13 +71,28 @@ export default function Register() {
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
+                message: "还没输入密码喵~",
               },
             ]}
           >
             <Input.Password />
           </Form.Item>
-
+          <Form.Item
+            label="邮箱"
+            name="email"
+            rules={[
+              {
+                type: "email",
+                message: "要输入正确的邮箱喵",
+              },
+              {
+                required: true,
+                message: "还没输入邮箱喵~",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
           <Form.Item
             wrapperCol={{
               offset: 8,

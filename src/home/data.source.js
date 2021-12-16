@@ -38,68 +38,68 @@ export const Nav30DataSource = {
           children: [{ children: "客户端下载", name: "text" }],
         },
       },
-      {
-        name: "item3",
-        className: "header3-item",
-        children: {
-          href: "#",
-          children: [{ children: "联系我们", name: "text" }],
-        },
-        //#region
-        //TODO:存在bug 当激活子元素时，默认联系我们为active状态
-        // subItem: [
-        //   {
-        //     name: "sub0",
-        //     className: "item-sub",
-        //     children: {
-        //       className: "item-sub-item",
-        //       children: [
-        //         {
-        //           name: "image0",
-        //           className: "item-image",
-        //           children: "https://s1.imagehub.cc/images/2021/11/26/tx.png",
-        //         },
-        //         {
-        //           name: "title",
-        //           className: "item-title",
-        //           children: "猫服QQ群",
-        //         },
-        //         {
-        //           name: "content",
-        //           className: "item-content",
-        //           children: "643531871",
-        //         },
-        //       ],
-        //     },
-        //   },
-        //   {
-        //     name: "sub1",
-        //     className: "item-sub",
-        //     children: {
-        //       className: "item-sub-item",
-        //       children: [
-        //         {
-        //           name: "image0",
-        //           className: "item-image",
-        //           children:
-        //             "https://s1.imagehub.cc/images/2021/11/26/minecraft.png",
-        //         },
-        //         {
-        //           name: "title",
-        //           className: "item-title",
-        //           children: "官方宣传帖",
-        //         },
-        //         {
-        //           name: "content",
-        //           className: "item-content",
-        //           children: "MCBBS指路=>",
-        //         },
-        //       ],
-        //     },
-        //   },
-        // ],
-        //#endregion
-      },
+      // {
+      //   name: "item3",
+      //   className: "header3-item",
+      //   children: {
+      //     href: "#",
+      //     children: [{ children: "联系我们", name: "text" }],
+      //   },
+      //   //#region
+      //   //TODO:存在bug 当激活子元素时，默认联系我们为active状态
+      //   // subItem: [
+      //   //   {
+      //   //     name: "sub0",
+      //   //     className: "item-sub",
+      //   //     children: {
+      //   //       className: "item-sub-item",
+      //   //       children: [
+      //   //         {
+      //   //           name: "image0",
+      //   //           className: "item-image",
+      //   //           children: "https://s1.imagehub.cc/images/2021/11/26/tx.png",
+      //   //         },
+      //   //         {
+      //   //           name: "title",
+      //   //           className: "item-title",
+      //   //           children: "猫服QQ群",
+      //   //         },
+      //   //         {
+      //   //           name: "content",
+      //   //           className: "item-content",
+      //   //           children: "643531871",
+      //   //         },
+      //   //       ],
+      //   //     },
+      //   //   },
+      //   //   {
+      //   //     name: "sub1",
+      //   //     className: "item-sub",
+      //   //     children: {
+      //   //       className: "item-sub-item",
+      //   //       children: [
+      //   //         {
+      //   //           name: "image0",
+      //   //           className: "item-image",
+      //   //           children:
+      //   //             "https://s1.imagehub.cc/images/2021/11/26/minecraft.png",
+      //   //         },
+      //   //         {
+      //   //           name: "title",
+      //   //           className: "item-title",
+      //   //           children: "官方宣传帖",
+      //   //         },
+      //   //         {
+      //   //           name: "content",
+      //   //           className: "item-content",
+      //   //           children: "MCBBS指路=>",
+      //   //         },
+      //   //       ],
+      //   //     },
+      //   //   },
+      //   // ],
+      //   //#endregion
+      // },
       {
         name: "item4",
         className: "header4-item",
