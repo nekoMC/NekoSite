@@ -12,21 +12,22 @@ export default function Register() {
     axios
       .post(url, data)
       .then((res) => {
-        message.success(res, 2);
+        message.success("创建成功", 2);
+        console.log(res);
       })
       .catch(function (error) {
         if (error.response) {
           // 请求已发出，但服务器响应的状态码不在 2xx 范围内
-          message.error("Error: " + error.response.msg, 2);
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
+          message.error("Error: " + error.response.data.msg, 2);
+          // console.log("error_res", error.response);
+          // console.log(error.response.status);
+          // console.log(error.response.headers);
         } else {
           // Something happened in setting up the request that triggered an Error
           message.error("Error: " + error.message, 2);
-          console.log("Error" + error.message, 2);
+          // console.log("Error" + error.message, 2);
         }
-        console.log(error.config);
+        // console.log(error.config);
       });
   };
   const onFinishFailed = (errorInfo) => {
