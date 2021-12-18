@@ -1,11 +1,16 @@
 import { React, useState } from "react";
-import { Form, Input, Button, Card, message } from "antd";
+import { Form, Input, Button, Card, message, Select } from "antd";
 import "./less/register.less";
 import axios from "axios";
+const { Option } = Select;
 export default function Register() {
   const onFinish = (values) => {
-    console.log("Success:", values);
-    console.log(typeof values);
+    values.username =
+      values.username.edition == "BE"
+        ? "[BE]" + values.username.id
+        : values.username.id;
+    // console.log("Success:", values);
+    // console.log(typeof values);
     myrequest("https://api.nekomc.fun/neko/users/register", values);
   };
   const myrequest = (url, data) => {
@@ -13,7 +18,7 @@ export default function Register() {
       .post(url, data)
       .then((res) => {
         message.success("创建成功", 2);
-        console.log(res);
+        // console.log(res);
       })
       .catch(function (error) {
         if (error.response) {
@@ -24,6 +29,7 @@ export default function Register() {
           // console.log(error.response.headers);
         } else {
           // Something happened in setting up the request that triggered an Error
+
           message.error("Error: " + error.message, 2);
           // console.log("Error" + error.message, 2);
         }
@@ -31,7 +37,7 @@ export default function Register() {
       });
   };
   const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    // console.log("Failed:", errorInfo);
   };
 
   return (
@@ -53,17 +59,26 @@ export default function Register() {
           onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
-          <Form.Item
-            label="用户名"
-            name="username"
-            rules={[
-              {
-                required: true,
-                message: "还没输入用户名喵~",
-              },
-            ]}
-          >
-            <Input />
+          <Form.Item label="用户名" name="username">
+            <Input.Group compact>
+              <Form.Item
+                name={["username", "edition"]}
+                noStyle
+                rules={[{ required: true, message: "还没有选择平台喵~" }]}
+              >
+                <Select style={{ width: "25%" }} placeholder="选择平台">
+                  <Option value="Java">Java</Option>
+                  <Option value="BE">BE</Option>
+                </Select>
+              </Form.Item>
+              <Form.Item
+                name={["username", "id"]}
+                noStyle
+                rules={[{ required: true, message: "还没输入用户名喵~" }]}
+              >
+                <Input style={{ width: "75%" }} placeholder="这里输入用户名" />
+              </Form.Item>
+            </Input.Group>
           </Form.Item>
 
           <Form.Item
@@ -76,7 +91,7 @@ export default function Register() {
               },
             ]}
           >
-            <Input.Password />
+            <Input.Password placeholder="这里输入密码" />
           </Form.Item>
           <Form.Item
             label="邮箱"
@@ -92,11 +107,11 @@ export default function Register() {
               },
             ]}
           >
-            <Input />
+            <Input placeholder="这里输入邮箱" />
           </Form.Item>
           <Form.Item
             wrapperCol={{
-              offset: 8,
+              offset: 10,
               span: 16,
             }}
           >
