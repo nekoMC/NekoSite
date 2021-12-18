@@ -5,6 +5,7 @@ import Content0 from "./Content0";
 import Content5 from "./Content5";
 import Content3 from "./Content3";
 import Content11 from "./Content11";
+import Backtop from "./BackTop";
 // import Footer1 from "./Footer1";
 
 import {
@@ -16,6 +17,7 @@ import {
 } from "./data.source";
 import "./less/antMotionStyle.less";
 import "./less/radius.less";
+import BackTop from "./BackTop";
 let isMobile;
 enquireScreen((b) => {
   isMobile = b;

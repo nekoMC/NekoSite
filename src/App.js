@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { enquireScreen } from "enquire-js";
 import Header from "./home/Nav3";
 import Footer from "./home/Footer1";
+import Backtop from "./home/BackTop";
 import Home from "./home";
 import Donate from "./donate/Donate";
 import Team from "./team/Team";
 import Register from "./register/Register";
+
 import { Nav30DataSource, Footer10DataSource } from "./home/data.source.js";
 let isMobile;
 enquireScreen((b) => {
@@ -39,6 +41,7 @@ class App extends Component {
             <Route path="/register" element={<Register />} />
             <Route path="/question" element={<h1> FAQ正在开发中...</h1>} />
           </Routes>
+          <Backtop />
           <Footer dataSource={Footer10DataSource} isMobile={this.isMobile} />
         </Router>
       </div>

@@ -110,10 +110,10 @@ export default function Register() {
           <p>
             <b>关于注册猫服账号的说明</b>
           </p>
-          <p>😼 construction</p>
-          <p>😃construction</p>
-          <p>💡construction</p>
-          <p>🕹️construction</p>
+          <p>😼猫服账号用于登录猫服客户端，后续会解锁更多功能</p>
+          <p>😃注册账号需要进行邮箱验证，验证成功后可使用邮箱或用户名登录</p>
+          <p>💡基岩版、JAVA版账号不互通，如需要请分别注册</p>
+          <p>🕹️.......</p>
         </Card>
       </div>
     </div>
