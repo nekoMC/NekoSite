@@ -7,6 +7,7 @@ import Backtop from "./home/BackTop";
 import Home from "./home";
 import Donate from "./donate/Donate";
 import Team from "./team/Team";
+import Message from "./message/Message";
 import Register from "./register/Register";
 
 import { Nav30DataSource, Footer10DataSource } from "./home/data.source.js";
@@ -40,6 +41,7 @@ class App extends Component {
             <Route path="/donate" element={<Donate />} />
             <Route path="/register" element={<Register />} />
             <Route path="/question" element={<h1> FAQ正在开发中...</h1>} />
+            {/* <Route path="/message" element={<Message />} /> */}
           </Routes>
           <Backtop />
           <Footer dataSource={Footer10DataSource} isMobile={this.isMobile} />

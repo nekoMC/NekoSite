@@ -6,7 +6,7 @@ const { Option } = Select;
 export default function Register() {
   const onFinish = (values) => {
     values.username =
-      values.username.edition == "BE"
+      values.username.edition === "BE"
         ? "[BE]" + values.username.id
         : values.username.id;
     // console.log("Success:", values);
@@ -59,14 +59,18 @@ export default function Register() {
           onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
-          <Form.Item label="用户名" name="username">
+          <Form.Item
+            label="用户名"
+            name="username"
+            rules={[{ required: true }]}
+          >
             <Input.Group compact>
               <Form.Item
                 name={["username", "edition"]}
                 noStyle
                 rules={[{ required: true, message: "还没有选择平台喵~" }]}
               >
-                <Select style={{ width: "25%" }} placeholder="选择平台">
+                <Select style={{ width: "23%" }} placeholder="选择平台">
                   <Option value="Java">Java</Option>
                   <Option value="BE">BE</Option>
                 </Select>
@@ -76,7 +80,7 @@ export default function Register() {
                 noStyle
                 rules={[{ required: true, message: "还没输入用户名喵~" }]}
               >
-                <Input style={{ width: "75%" }} placeholder="这里输入用户名" />
+                <Input style={{ width: "77%" }} placeholder="这里输入用户名" />
               </Form.Item>
             </Input.Group>
           </Form.Item>
@@ -111,7 +115,7 @@ export default function Register() {
           </Form.Item>
           <Form.Item
             wrapperCol={{
-              offset: 10,
+              offset: 8,
               span: 16,
             }}
           >
@@ -120,7 +124,6 @@ export default function Register() {
             </Button>
           </Form.Item>
         </Form>
-
         <Card bordered={true} className="mycard">
           <p>
             <b>关于注册猫服账号的说明</b>
