@@ -41,7 +41,7 @@ class App extends Component {
             <Route path="/donate" element={<Donate />} />
             <Route path="/register" element={<Register />} />
             <Route path="/question" element={<h1> FAQ正在开发中...</h1>} />
-            {/* <Route path="/message" element={<Message />} /> */}
+            <Route path="/message" element={<Message />} />
           </Routes>
           <Backtop />
           <Footer dataSource={Footer10DataSource} isMobile={this.isMobile} />

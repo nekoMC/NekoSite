@@ -62,7 +62,7 @@ export default function Register() {
           <Form.Item
             label="用户名"
             name="username"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: " " }]} //此处只是为了加个*号 故不作message
           >
             <Input.Group compact>
               <Form.Item
