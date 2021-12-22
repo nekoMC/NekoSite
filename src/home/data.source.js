@@ -1,6 +1,6 @@
 import React from "react";
 const qqNum = "QQ群:643531871 ";
-const ipAddr = "服务器地址:nekomc.fun:19132";
+const ipAddr = "服务器地址:play.nekomc.fun:19132";
 const tip_words = qqNum + "\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + ipAddr;
 const btn_ = "现在加入";
 export const Nav30DataSource = {
