@@ -40,7 +40,7 @@ class App extends Component {
             <Route path="/team" element={<Team />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/question" element={<h1> FAQ正在开发中...</h1>} />
+            <Route path="/time" element={<h1> 正在开发中</h1>} />
             <Route path="/message" element={<Message />} />
           </Routes>
           <Backtop />

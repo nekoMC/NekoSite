@@ -633,9 +633,24 @@ export const Footer10DataSource = {
         title: { children: "指北" },
         childWrapper: {
           children: [
-            { name: "link0", href: "/update", children: "更新记录" },
-            { name: "link1", href: "/wiki", children: "游戏文档" },
-            { name: "link2", href: "/start", children: "快速入门" },
+            {
+              target: "_blank",
+              name: "link0",
+              href: "https://wiki.nekomc.fun/document/index?document_id=3",
+              children: "更新记录",
+            },
+            {
+              target: "_blank",
+              name: "link1",
+              href: "https://wiki.nekomc.fun/document/index?document_id=4",
+              children: "游戏文档",
+            },
+            {
+              target: "_blank",
+              name: "link2",
+              href: "https://wiki.nekomc.fun/document/index?document_id=5",
+              children: "快速入门",
+            },
           ],
         },
       },
@@ -647,7 +662,7 @@ export const Footer10DataSource = {
         title: { children: "关于" },
         childWrapper: {
           children: [
-            { href: "/question", name: "link0", children: "FAQ" },
+            { href: "/time", name: "link0", children: "周目手札" },
             { href: "/team", name: "link0", children: "制作团队" },
           ],
         },
