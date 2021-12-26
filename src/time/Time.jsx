@@ -2,11 +2,15 @@ import { React, useState, useEffect } from "react";
 import dayjs from "dayjs";
 import "./time.less";
 export default function Time() {
-  const getSFM = function (seconds, dateFormat = "H小时 i分钟 s秒") {
+  const getTSFM = function (seconds, dateFormat = "D天 H小时 i分钟 s秒") {
     var obj = {};
-    obj.H = Number.parseInt(seconds / 3600);
+    obj.D = Number.parseInt(seconds / 86400);
+    obj.H = Number.parseInt((seconds - obj.D * 86400) / 3600);
     obj.i = Number.parseInt((seconds - obj.H * 3600) / 60);
     obj.s = Number.parseInt(seconds - obj.H * 3600 - obj.i * 60);
+    if (obj.D < 10) {
+      obj.D = "0" + obj.D;
+    }
     if (obj.H < 10) {
       obj.H = "0" + obj.H;
     }
@@ -17,6 +21,7 @@ export default function Time() {
       obj.s = "0" + obj.s;
     }
     var rs = dateFormat
+      .replace("D", obj.D)
       .replace("H", obj.H)
       .replace("i", obj.i)
       .replace("s", obj.s);
@@ -42,7 +47,7 @@ export default function Time() {
             当前为猫服 <b className="zmnum">0</b> 周目 (内测)
           </h1>
 
-          <h2>已经运行了{getSFM(date - level1)}</h2>
+          <h2>已经运行了{getTSFM(date - level1)}</h2>
         </div>
       </div>
     </div>
