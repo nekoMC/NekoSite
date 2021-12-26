@@ -11,6 +11,7 @@
     "axios": "^0.24.0",
     "babel-plugin-import": "^1.13.3",
     "customize-cra": "^1.0.0",
+    "dayjs": "^1.10.7",
     "enquire-js": "^0.2.1",
     "less": "^4.1.2",
     "less-loader": "^6.0.0",

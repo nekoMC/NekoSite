@@ -7,6 +7,7 @@ import Backtop from "./home/BackTop";
 import Home from "./home";
 import Donate from "./donate/Donate";
 import Team from "./team/Team";
+import Time from "./time/Time";
 import Message from "./message/Message";
 import Register from "./register/Register";
 
@@ -40,7 +41,7 @@ class App extends Component {
             <Route path="/team" element={<Team />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/time" element={<h1> 正在开发中</h1>} />
+            <Route path="/time" element={<Time />} />
             <Route path="/message" element={<Message />} />
           </Routes>
           <Backtop />
