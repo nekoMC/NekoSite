@@ -13,6 +13,7 @@
     "customize-cra": "^1.0.0",
     "dayjs": "^1.10.7",
     "enquire-js": "^0.2.1",
+    "js-base64": "^3.7.2",
     "less": "^4.1.2",
     "less-loader": "^6.0.0",
     "rc-banner-anim": "^2.4.5",

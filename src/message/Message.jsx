@@ -1,23 +1,30 @@
+import { Base64 } from "js-base64";
 import { React, useEffect, useState } from "react";
 import { paramsParse } from "../utils";
 import "./less/message.less";
 
 export default function Message() {
-  let a = {
-    state: 1,
-    title: "验证成功",
-    message: "太棒了,您的账号已绑定正版授权",
-  };
-  const [status, setStatus] = useState(0);
+  const [title, setTitle] = useState(" ");
   const [content, setContent] = useState(" ");
+  //issue#1 弃用前端判定，使用后台base64加密参数
+  // useEffect(() => {
+  //   let paramObj = paramsParse();
+  //   console.log(paramObj);
+  //   if (!!paramObj.status && !!paramObj.content) {
+  //     setStatus(paramObj.status);
+  //     setContent(paramObj.content);
+  //     // console.log("1", typeof paramObj.status);
+  //   } else {
+  //     console.log("Error params");
+  //   }
+  // }, []);
   useEffect(() => {
     let paramObj = paramsParse();
-    if (!!paramObj.status && !!paramObj.content) {
-      setStatus(paramObj.status);
-      setContent(paramObj.content);
-      // console.log("1", typeof paramObj.status);
-    } else {
-      console.log("Error params");
+    let data = Base64.decode(paramObj.data);
+    let dataObj = JSON.parse(data);
+    if (dataObj.title && dataObj.message) {
+      setTitle(dataObj.title);
+      setContent(dataObj.message);
     }
   }, []);
   return (
@@ -26,7 +33,8 @@ export default function Message() {
         <div className="msgcard">
           <p className="msgcard-title">喵服 - 邮箱验证</p>
           <p className="msgcard-content">
-            {status === "0" ? "恭喜你!" : "很抱歉,"}
+            {/* {status === "0" ? "恭喜你!" : "很抱歉,"} */}
+            {title}
           </p>
           <p className="msgcard-content-main">{content}</p>
         </div>
