@@ -636,19 +636,19 @@ export const Footer10DataSource = {
             {
               target: "_blank",
               name: "link0",
-              href: "https://wiki.nekomc.fun/document/index?document_id=3",
+              href: "https://wiki.nekomc.fun/page/display?document_id=3",
               children: "更新记录",
             },
             {
               target: "_blank",
               name: "link1",
-              href: "https://wiki.nekomc.fun/document/index?document_id=4",
+              href: "https://wiki.nekomc.fun/page/display?document_id=4",
               children: "游戏文档",
             },
             {
               target: "_blank",
               name: "link2",
-              href: "https://wiki.nekomc.fun/document/index?document_id=5",
+              href: "https://wiki.nekomc.fun/page/display?document_id=5",
               children: "快速入门",
             },
           ],
