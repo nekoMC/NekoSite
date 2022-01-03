@@ -34,7 +34,8 @@ export const Nav30DataSource = {
         name: "item2",
         className: "header3-item",
         children: {
-          href: "#",
+          target: "_blank",
+          href: "https://www.aliyundrive.com/s/ziM3qawp7wL",
           children: [{ children: "客户端下载", name: "text" }],
         },
       },
@@ -596,7 +597,14 @@ export const Content110DataSource = {
   },
   button: {
     className: "",
-    children: { a: { className: "button", href: "#", children: "客户端下载" } },
+    children: {
+      a: {
+        className: "button",
+        target: "_blank",
+        href: "https://www.aliyundrive.com/s/ziM3qawp7wL",
+        children: "客户端下载",
+      },
+    },
   },
 };
 export const Footer10DataSource = {
