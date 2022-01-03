@@ -6,8 +6,10 @@ export default function Time() {
     var obj = {};
     obj.D = Number.parseInt(seconds / 86400);
     obj.H = Number.parseInt((seconds - obj.D * 86400) / 3600);
-    obj.i = Number.parseInt((seconds - obj.H * 3600) / 60);
-    obj.s = Number.parseInt(seconds - obj.H * 3600 - obj.i * 60);
+    obj.i = Number.parseInt((seconds - obj.D * 86400 - obj.H * 3600) / 60);
+    obj.s = Number.parseInt(
+      seconds - obj.D * 86400 - obj.H * 3600 - obj.i * 60
+    );
     if (obj.D < 10) {
       obj.D = "0" + obj.D;
     }

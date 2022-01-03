@@ -3,6 +3,11 @@ import { paramsParse } from "../utils";
 import "./less/message.less";
 
 export default function Message() {
+  let a = {
+    state: 1,
+    title: "验证成功",
+    message: "太棒了,您的账号已绑定正版授权",
+  };
   const [status, setStatus] = useState(0);
   const [content, setContent] = useState(" ");
   useEffect(() => {
