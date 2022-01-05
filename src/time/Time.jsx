@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import dayjs from "dayjs";
 import "./time.less";
 export default function Time() {
+  const [date, setdate] = useState(dayjs().unix());
   const getTSFM = function (seconds, dateFormat = "D天 H小时 i分钟 s秒") {
     var obj = {};
     obj.D = Number.parseInt(seconds / 86400);
@@ -30,16 +31,15 @@ export default function Time() {
     return rs;
   };
   const level1 = dayjs("2021-12-26").unix();
-  let timer;
-  const [date, setdate] = useState(dayjs().unix());
+
   const tick = () => {
-    timer = setInterval(() => {
+    setInterval(() => {
       setdate(dayjs().unix());
     }, 1000);
   };
   useEffect(() => {
     tick();
-  }, []);
+  });
   return (
     <div className="timecontent-color">
       <div className="timecontent">

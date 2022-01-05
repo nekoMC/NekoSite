@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Form, Input, Button, Card, message, Select, Modal } from "antd";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import "./less/register.less";

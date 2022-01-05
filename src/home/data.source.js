@@ -1,6 +1,6 @@
 import React from "react";
 const qqNum = "QQ群:643531871 ";
-const ipAddr = "服务器地址:play.nekomc.fun:19132";
+const ipAddr = "";
 const tip_words = qqNum + "\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + ipAddr;
 const btn_ = "现在加入";
 export const Nav30DataSource = {
@@ -556,7 +556,7 @@ export const Content30DataSource = {
           content: {
             className: "content3-content",
             children:
-              "我们的服务器还在雏形阶段，无论是官方的版本更新还是更多游戏玩法的更新，我们都将持续跟进更新..",
+              "我们的服务器还在雏形阶段，无论是官方的版本更新还是更多游戏玩法的更新，我们都将持续跟进..",
           },
         },
       },
