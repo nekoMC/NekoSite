@@ -36,7 +36,11 @@ export default function Message() {
             {/* {status === "0" ? "恭喜你!" : "很抱歉,"} */}
             {title}
           </p>
-          <p className="msgcard-content-main">{content}</p>
+          {/* content中html标签使用dangerouslySetInnerHTML直接渲染 */}
+          <p
+            className="msgcard-content-main"
+            dangerouslySetInnerHTML={{ __html: content }}
+          ></p>
         </div>
       </div>
     </div>
