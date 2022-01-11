@@ -12,7 +12,7 @@ export const Teams10DataSource = {
       {
         name: "block0",
         className: "block",
-        md: 12,
+        md: 6,
         xs: 24,
         titleWrapper: {
           children: [
@@ -38,7 +38,7 @@ export const Teams10DataSource = {
       {
         name: "block1",
         className: "block",
-        md: 12,
+        md: 6,
         xs: 24,
         titleWrapper: {
           children: [
@@ -56,6 +56,60 @@ export const Teams10DataSource = {
               name: "content",
               className: "teams1-job",
               children: "腐竹&开发",
+            },
+            {
+              name: "content1",
+              className: "teams1-content",
+              children: "",
+            },
+          ],
+        },
+      },
+      {
+        name: "block0",
+        className: "block",
+        md: 6,
+        xs: 24,
+        titleWrapper: {
+          children: [
+            {
+              name: "image",
+              className: "teams1-image",
+              children:
+                "https://s1.imagehub.cc/images/2022/01/11/MH4061DANZYMY8CTKZ1.jpg",
+            },
+            { name: "title", className: "teams1-title", children: "ourange" },
+            {
+              name: "content",
+              className: "teams1-job",
+              children: "技术&开发 ",
+            },
+            {
+              name: "content1",
+              className: "teams1-content",
+              children: "",
+            },
+          ],
+        },
+      },
+      {
+        name: "block0",
+        className: "block",
+        md: 6,
+        xs: 24,
+        titleWrapper: {
+          children: [
+            {
+              name: "image",
+              className: "teams1-image",
+              children:
+                "https://s1.imagehub.cc/images/2022/01/11/091ced7e68407bf22135fdcc1d28717.jpg",
+            },
+            { name: "title", className: "teams1-title", children: "Aoao" },
+            {
+              name: "content",
+              className: "teams1-job",
+              children: "策划&建筑 ",
             },
             {
               name: "content1",
