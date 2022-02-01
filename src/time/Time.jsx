@@ -30,7 +30,7 @@ export default function Time() {
       .replace("s", obj.s);
     return rs;
   };
-  const level1 = dayjs("2021-12-26").unix();
+  const level1 = dayjs("2022-1-30").unix();
 
   const tick = () => {
     setInterval(() => {
@@ -46,9 +46,9 @@ export default function Time() {
         <div className="timeimg"></div>
         <div className="timewords">
           <h1>
-            当前为猫服 <b className="zmnum">0</b> 周目 (内测)
+            当前为猫服 <b className="zmnum">1</b> 周目
           </h1>
-
+          {/* (0周目897小时) */}
           <h2>已经运行了{getTSFM(date - level1)}</h2>
         </div>
       </div>
