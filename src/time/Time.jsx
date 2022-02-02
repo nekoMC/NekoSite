@@ -43,6 +43,11 @@ export default function Time() {
   return (
     <div className="timecontent-color">
       <div className="timecontent">
+        <div className="timeimg0"></div>
+        <div className="timewords">
+          <h3 className="zmnum_older">0周目(测试)存活了897小时</h3>
+        </div>
+
         <div className="timeimg"></div>
         <div className="timewords">
           <h1>
