@@ -39,7 +39,10 @@ class App extends Component {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/donate" element={<Donate />} />
+            <Route
+              path="/donate"
+              element={<Donate isMobile={this.state.isMobile} />}
+            />
             <Route path="/register" element={<Register />} />
             <Route path="/time" element={<Time />} />
             <Route path="/message" element={<Message />} />

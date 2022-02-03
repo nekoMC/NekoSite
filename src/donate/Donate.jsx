@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import { Popover, Card, Col, Row } from "antd";
 import "./less/donate.less";
-
 const donate_one = (
   <div>
     <img
@@ -59,7 +58,8 @@ const donate_four = (
     />
   </div>
 );
-export default function Donate() {
+export default function Donate(props) {
+  const ismobile = props.isMobile;
   const [isChecked, setIsChecked] = useState([false, false, false, false]);
   const checkedChange = function (e, n) {
     switch (n) {
@@ -85,6 +85,10 @@ export default function Donate() {
         break;
     }
   };
+
+  console.log(11111111111111111, ismobile);
+  console.log(22222222222222222, props);
+
   return (
     <div className="content-color">
       <div
@@ -94,7 +98,7 @@ export default function Donate() {
         className="content content-color cards"
       >
         <Row gutter={32}>
-          <Col span={6}>
+          <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_one} trigger="click">
               <Card
                 onClick={(e) => {
@@ -104,7 +108,7 @@ export default function Donate() {
                 title="点击捐赠一个苹果 "
                 extra={
                   <a>
-                    <b>￥2</b>
+                    <b> ￥2 </b>
                   </a>
                 }
                 bordered={false}
@@ -113,17 +117,20 @@ export default function Donate() {
               </Card>
             </Popover>
           </Col>
-          <Col span={6}>
+          <Col>
+            <div className="blank"></div>
+          </Col>
+          <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_two} trigger="click">
               <Card
                 onClick={(e) => {
                   checkedChange(e, 1);
                 }}
                 className={isChecked[1] ? "cards-test-active cards-font" : ""}
-                title="点击捐赠一块铁锭 "
+                title=" 点击捐赠一块铁锭  "
                 extra={
                   <a>
-                    <b>￥8</b>
+                    <b> ￥8 </b>
                   </a>
                 }
                 bordered={false}
@@ -132,14 +139,17 @@ export default function Donate() {
               </Card>
             </Popover>
           </Col>
-          <Col span={6}>
+          <Col>
+            <div className="blank"></div>
+          </Col>
+          <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_three} trigger="click">
               <Card
                 onClick={(e) => {
                   checkedChange(e, 2);
                 }}
                 className={isChecked[2] ? "cards-test-active cards-font" : ""}
-                title="点击捐赠一块金锭！ "
+                title=" 点击捐赠一块金锭  "
                 extra={
                   <a>
                     <b>￥20</b>
@@ -151,14 +161,17 @@ export default function Donate() {
               </Card>
             </Popover>
           </Col>
-          <Col span={6}>
+          <Col>
+            <div className="blank"></div>
+          </Col>
+          <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_four} trigger="click">
               <Card
                 onClick={(e) => {
                   checkedChange(e, 3);
                 }}
                 className={isChecked[3] ? "cards-test-active cards-font" : ""}
-                title="这是?钻石!  "
+                title="点击捐赠一颗钻石  "
                 extra={
                   <a>
                     <b>￥???</b>
