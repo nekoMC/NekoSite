@@ -107,9 +107,9 @@ export default function Donate(props) {
                 className={isChecked[0] ? "cards-test-active cards-font" : ""}
                 title="点击捐赠一个苹果 "
                 extra={
-                  <a>
+                  <p className="theme-link">
                     <b> ￥2 </b>
-                  </a>
+                  </p>
                 }
                 bordered={false}
               >
@@ -117,9 +117,13 @@ export default function Donate(props) {
               </Card>
             </Popover>
           </Col>
-          <Col>
-            <div className="blank"></div>
-          </Col>
+          {ismobile ? (
+            <Col>
+              <div className="blank"></div>
+            </Col>
+          ) : (
+            ""
+          )}
           <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_two} trigger="click">
               <Card
@@ -129,9 +133,9 @@ export default function Donate(props) {
                 className={isChecked[1] ? "cards-test-active cards-font" : ""}
                 title=" 点击捐赠一块铁锭  "
                 extra={
-                  <a>
+                  <p className="theme-link">
                     <b> ￥8 </b>
-                  </a>
+                  </p>
                 }
                 bordered={false}
               >
@@ -139,9 +143,13 @@ export default function Donate(props) {
               </Card>
             </Popover>
           </Col>
-          <Col>
-            <div className="blank"></div>
-          </Col>
+          {ismobile ? (
+            <Col>
+              <div className="blank"></div>
+            </Col>
+          ) : (
+            ""
+          )}
           <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_three} trigger="click">
               <Card
@@ -151,9 +159,9 @@ export default function Donate(props) {
                 className={isChecked[2] ? "cards-test-active cards-font" : ""}
                 title=" 点击捐赠一块金锭  "
                 extra={
-                  <a>
+                  <p className="theme-link">
                     <b>￥20</b>
-                  </a>
+                  </p>
                 }
                 bordered={false}
               >
@@ -161,9 +169,13 @@ export default function Donate(props) {
               </Card>
             </Popover>
           </Col>
-          <Col>
-            <div className="blank"></div>
-          </Col>
+          {ismobile ? (
+            <Col>
+              <div className="blank"></div>
+            </Col>
+          ) : (
+            ""
+          )}
           <Col span={ismobile ? 32 : 6}>
             <Popover content={donate_four} trigger="click">
               <Card
@@ -173,9 +185,9 @@ export default function Donate(props) {
                 className={isChecked[3] ? "cards-test-active cards-font" : ""}
                 title="点击捐赠一颗钻石  "
                 extra={
-                  <a>
+                  <p className="theme-link">
                     <b>￥???</b>
-                  </a>
+                  </p>
                 }
                 bordered={false}
               >

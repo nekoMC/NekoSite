@@ -694,7 +694,8 @@ export const Footer10DataSource = {
     children: (
       <div>
         <span>
-          ©2021 by <a>Neko MC</a>&nbsp;&nbsp;&nbsp;&nbsp; 辽ICP备19006288号-2
+          ©2021 by <a href="https://www.nekomc.fun">Neko MC</a>
+          &nbsp;&nbsp;&nbsp;&nbsp; 辽ICP备19006288号-2
         </span>
       </div>
     ),
