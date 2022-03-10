@@ -13,6 +13,7 @@
     "customize-cra": "^1.0.0",
     "dayjs": "^1.10.7",
     "enquire-js": "^0.2.1",
+    "immer": "^9.0.6",
     "js-base64": "^3.7.2",
     "less": "^4.1.2",
     "less-loader": "^6.0.0",
@@ -25,6 +26,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "shell-quote": "^1.7.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
