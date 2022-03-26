@@ -35,7 +35,7 @@ export const Nav30DataSource = {
         className: "header3-item",
         children: {
           target: "_blank",
-          href: "https://www.aliyundrive.com/s/ziM3qawp7wL",
+          href: "https://www.aliyundrive.com/s/dv1xneUFbEv",
           children: [{ children: "客户端下载", name: "text" }],
         },
       },
