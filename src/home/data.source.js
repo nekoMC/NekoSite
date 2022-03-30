@@ -26,7 +26,7 @@ export const Nav30DataSource = {
         className: "header3-item",
         children: {
           target: "_blank",
-          href: "http://play.nekomc.fun:8123/",
+          href: "http://map.nekomc.fun/",
           children: [{ children: "卫星地图", name: "text" }],
         },
       },
